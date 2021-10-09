@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp" app:elevation="0dp" layout_height="wrap_content">
+    <android.support.p003v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:minHeight="?attr/actionBarSize" android:elevation="0dp" app:elevation="0dp" app:theme="@style/ToolBarStyle">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="start" android:id="@+id/toolbarTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@+id/notificationView"/>
+            <RelativeLayout android:id="@+id/notificationView" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="35dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@+id/notiIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_notification" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+                <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/notificationCount" android:background="@drawable/badge_circle" android:padding="0dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginBottom="13dp" android:layout_alignTop="@+id/notiIcon" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.p003v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

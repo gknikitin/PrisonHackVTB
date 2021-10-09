@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialTheme.ActionBar.DayNight">
+    </style>
+    <style name="MaterialTheme.ActionBar.TranslucentStatus.DayNight">
+    </style>
+    <style name="MaterialTheme.DarkToolbar.ActionBar.DayNight">
+    </style>
+    <style name="MaterialTheme.DarkToolbar.ActionBar.TranslucentStatus.DayNight">
+    </style>
+    <style name="MaterialTheme.DarkToolbar.DayNight">
+    </style>
+    <style name="MaterialTheme.DarkToolbar.TranslucentStatus.DayNight">
+    </style>
+    <style name="MaterialTheme.DayNight">
+    </style>
+    <style name="MaterialTheme.TranslucentStatus.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarTop" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/adsView" android:layout_below="@+id/toolbarTop">
+        <RelativeLayout android:gravity="center" android:padding="@dimen/margin_15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/quiz_light" android:padding="@dimen/margin_10dp" android:layout_width="@dimen/margin_100dp" android:layout_height="@dimen/margin_100dp" android:layout_marginBottom="@dimen/margin_30dp" android:src="@drawable/ic_idea" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/first_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_15dp" android:text="@string/welcome_text" android:layout_below="@+id/quiz_light"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/third_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_15dp" android:text="@string/ready_prompt" android:layout_below="@+id/first_text"/>
+            <Button android:textColor="@color/white" android:id="@+id/btn_yes" android:background="@drawable/rectangle_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:text="@string/yes" android:layout_below="@+id/third_text"/>
+            <Button android:textColor="@color/white" android:id="@+id/btn_no" android:background="@drawable/rectangle_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:text="@string/no" android:layout_below="@+id/btn_yes"/>
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@+id/adsView" layout="@layout/content_banner_ad"/>
+</RelativeLayout>

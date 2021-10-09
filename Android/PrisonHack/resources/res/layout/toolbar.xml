@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+    <android.support.p003v7.widget.Toolbar android:theme="@style/ToolBarStyle" android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:minHeight="?attr/actionBarSize" app:elevation="0dp"/>
+</android.support.design.widget.AppBarLayout>

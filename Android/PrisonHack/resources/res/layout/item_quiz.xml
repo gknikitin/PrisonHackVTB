@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p003v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="4dp" android:layout_marginRight="1dp" android:layout_marginBottom="4dp" android:foreground="?android:attr/selectableItemBackground">
+    <TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/answer_text" android:padding="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</android.support.p003v7.widget.CardView>

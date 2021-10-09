@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarTop" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/adsView" android:layout_below="@+id/toolbarTop" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/web_view" android:paddingBottom="@dimen/margin_8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/adsView" layout="@layout/content_banner_ad"/>
+    <include layout="@layout/view_common_loader"/>
+</RelativeLayout>

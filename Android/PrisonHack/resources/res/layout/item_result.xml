@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/score_container" android:padding="@dimen/margin_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@+id/ans_icon">
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@+id/question_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_10dp"/>
+        <RelativeLayout android:id="@+id/your_ans_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/question_text">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ans_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_4dp">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_ans"/>
+                <TextView android:textColor="@color/red" android:id="@+id/given_ans_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" android:layout_marginStart="@dimen/margin_6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4dp" android:layout_below="@+id/your_ans_container">
+            <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/correct_ans"/>
+            <TextView android:textColor="@color/green" android:id="@+id/correct_ans_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" android:layout_marginStart="@dimen/margin_6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ans_icon" android:padding="@dimen/margin_6dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/margin_15dp" android:layout_alignParentEnd="true"/>
+    <View android:background="@color/toolbar_boarder" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_below="@+id/score_container"/>
+</RelativeLayout>

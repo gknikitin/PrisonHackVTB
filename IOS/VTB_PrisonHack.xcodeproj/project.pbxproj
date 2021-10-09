@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		722100D927117D0100C94F92 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722100D727117D0100C94F92 /* TaskTableViewCell.swift */; };
+		722100DA27117D0100C94F92 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722100D827117D0100C94F92 /* TaskTableViewCell.xib */; };
+		722100DC27117F4C00C94F92 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722100DB27117F4C00C94F92 /* Task.swift */; };
+		722100DE27118A2D00C94F92 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722100DD27118A2D00C94F92 /* TasksViewModel.swift */; };
+		722100E02711964700C94F92 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722100DF2711964700C94F92 /* TestViewController.swift */; };
+		722100E227119A4300C94F92 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722100E127119A4300C94F92 /* TestViewModel.swift */; };
+		72673BFC2710BFB400058EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673BFB2710BFB400058EE4 /* AppDelegate.swift */; };
+		72673BFE2710BFB400058EE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673BFD2710BFB400058EE4 /* SceneDelegate.swift */; };
+		72673C002710BFB400058EE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673BFF2710BFB400058EE4 /* ViewController.swift */; };
+		72673C032710BFB400058EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72673C012710BFB400058EE4 /* Main.storyboard */; };
+		72673C052710BFB700058EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72673C042710BFB700058EE4 /* Assets.xcassets */; };
+		72673C082710BFB700058EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72673C062710BFB700058EE4 /* LaunchScreen.storyboard */; };
+		72673C192710E13100058EE4 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673C182710E13100058EE4 /* MainScreenViewModel.swift */; };
+		72673C1D2710E20900058EE4 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673C1C2710E20900058EE4 /* UserSettings.swift */; };
+		72673C1F2710E4D200058EE4 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673C1E2710E4D200058EE4 /* TasksViewController.swift */; };
+		72673C212710E79A00058EE4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72673C202710E79A00058EE4 /* AboutViewController.swift */; };
+		80140AB226E0C9C865E2DC04 /* Pods_VTB_PrisonHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278654A6923A4FC559159B3F /* Pods_VTB_PrisonHack.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		278654A6923A4FC559159B3F /* Pods_VTB_PrisonHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VTB_PrisonHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAF7B7A660E9BE9FBC5743D /* Pods-VTB_PrisonHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTB_PrisonHack.release.xcconfig"; path = "Target Support Files/Pods-VTB_PrisonHack/Pods-VTB_PrisonHack.release.xcconfig"; sourceTree = "<group>"; };
+		722100D727117D0100C94F92 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		722100D827117D0100C94F92 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		722100DB27117F4C00C94F92 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		722100DD27118A2D00C94F92 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
+		722100DF2711964700C94F92 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		722100E127119A4300C94F92 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		72673BF82710BFB400058EE4 /* VTB_PrisonHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTB_PrisonHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72673BFB2710BFB400058EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72673BFD2710BFB400058EE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72673BFF2710BFB400058EE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72673C022710BFB400058EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72673C042710BFB700058EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72673C072710BFB700058EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72673C092710BFB700058EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72673C182710E13100058EE4 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		72673C1C2710E20900058EE4 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		72673C1E2710E4D200058EE4 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		72673C202710E79A00058EE4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D19E96B9F8EF250D0263A6D7 /* Pods-VTB_PrisonHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTB_PrisonHack.debug.xcconfig"; path = "Target Support Files/Pods-VTB_PrisonHack/Pods-VTB_PrisonHack.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72673BF52710BFB400058EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80140AB226E0C9C865E2DC04 /* Pods_VTB_PrisonHack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAE1F37F3E64A1299B2BEBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19E96B9F8EF250D0263A6D7 /* Pods-VTB_PrisonHack.debug.xcconfig */,
+				3FAF7B7A660E9BE9FBC5743D /* Pods-VTB_PrisonHack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		31F6ABE1B45E479F515656A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278654A6923A4FC559159B3F /* Pods_VTB_PrisonHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		722100D627117BBA00C94F92 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				722100D727117D0100C94F92 /* TaskTableViewCell.swift */,
+				722100D827117D0100C94F92 /* TaskTableViewCell.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		72673BEF2710BFB400058EE4 = {
+			isa = PBXGroup;
+			children = (
+				72673BFA2710BFB400058EE4 /* VTB_PrisonHack */,
+				72673BF92710BFB400058EE4 /* Products */,
+				0AAE1F37F3E64A1299B2BEBD /* Pods */,
+				31F6ABE1B45E479F515656A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72673BF92710BFB400058EE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72673BF82710BFB400058EE4 /* VTB_PrisonHack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72673BFA2710BFB400058EE4 /* VTB_PrisonHack */ = {
+			isa = PBXGroup;
+			children = (
+				72673C112710D58400058EE4 /* AppFiles */,
+				72673C102710D52200058EE4 /* SupportFiles */,
+				72673C0F2710D51000058EE4 /* SystemFiles */,
+			);
+			path = VTB_PrisonHack;
+			sourceTree = "<group>";
+		};
+		72673C0F2710D51000058EE4 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				72673C092710BFB700058EE4 /* Info.plist */,
+				72673BFB2710BFB400058EE4 /* AppDelegate.swift */,
+				72673BFD2710BFB400058EE4 /* SceneDelegate.swift */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		72673C102710D52200058EE4 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				72673C042710BFB700058EE4 /* Assets.xcassets */,
+				72673C062710BFB700058EE4 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		72673C112710D58400058EE4 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				72673C1A2710E1EA00058EE4 /* Services */,
+				72673C132710D5A900058EE4 /* InitialModule */,
+				72673C122710D59200058EE4 /* Storyboard */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		72673C122710D59200058EE4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				72673C012710BFB400058EE4 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		72673C132710D5A900058EE4 /* InitialModule */ = {
+			isa = PBXGroup;
+			children = (
+				722100D627117BBA00C94F92 /* SubView */,
+				72673C172710E09D00058EE4 /* Model */,
+				72673C162710E09600058EE4 /* View */,
+				72673C152710E07800058EE4 /* ViewModel */,
+			);
+			path = InitialModule;
+			sourceTree = "<group>";
+		};
+		72673C152710E07800058EE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				72673C182710E13100058EE4 /* MainScreenViewModel.swift */,
+				722100DD27118A2D00C94F92 /* TasksViewModel.swift */,
+				722100E127119A4300C94F92 /* TestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72673C162710E09600058EE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72673BFF2710BFB400058EE4 /* ViewController.swift */,
+				72673C1E2710E4D200058EE4 /* TasksViewController.swift */,
+				72673C202710E79A00058EE4 /* AboutViewController.swift */,
+				722100DF2711964700C94F92 /* TestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72673C172710E09D00058EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				722100DB27117F4C00C94F92 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72673C1A2710E1EA00058EE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72673C1B2710E1F000058EE4 /* UserSettings */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72673C1B2710E1F000058EE4 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				72673C1C2710E20900058EE4 /* UserSettings.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72673BF72710BFB400058EE4 /* VTB_PrisonHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72673C0C2710BFB700058EE4 /* Build configuration list for PBXNativeTarget "VTB_PrisonHack" */;
+			buildPhases = (
+				B2445FA759E5CD31A25689CD /* [CP] Check Pods Manifest.lock */,
+				72673BF42710BFB400058EE4 /* Sources */,
+				72673BF52710BFB400058EE4 /* Frameworks */,
+				72673BF62710BFB400058EE4 /* Resources */,
+				B193A14C7EBDD47B19A19FCB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VTB_PrisonHack;
+			productName = VTB_PrisonHack;
+			productReference = 72673BF82710BFB400058EE4 /* VTB_PrisonHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72673BF02710BFB400058EE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					72673BF72710BFB400058EE4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 72673BF32710BFB400058EE4 /* Build configuration list for PBXProject "VTB_PrisonHack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72673BEF2710BFB400058EE4;
+			productRefGroup = 72673BF92710BFB400058EE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72673BF72710BFB400058EE4 /* VTB_PrisonHack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72673BF62710BFB400058EE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722100DA27117D0100C94F92 /* TaskTableViewCell.xib in Resources */,
+				72673C082710BFB700058EE4 /* LaunchScreen.storyboard in Resources */,
+				72673C052710BFB700058EE4 /* Assets.xcassets in Resources */,
+				72673C032710BFB400058EE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B193A14C7EBDD47B19A19FCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VTB_PrisonHack/Pods-VTB_PrisonHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VTB_PrisonHack/Pods-VTB_PrisonHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VTB_PrisonHack/Pods-VTB_PrisonHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2445FA759E5CD31A25689CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VTB_PrisonHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72673BF42710BFB400058EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722100D927117D0100C94F92 /* TaskTableViewCell.swift in Sources */,
+				72673C002710BFB400058EE4 /* ViewController.swift in Sources */,
+				722100E02711964700C94F92 /* TestViewController.swift in Sources */,
+				72673C192710E13100058EE4 /* MainScreenViewModel.swift in Sources */,
+				72673BFC2710BFB400058EE4 /* AppDelegate.swift in Sources */,
+				72673C212710E79A00058EE4 /* AboutViewController.swift in Sources */,
+				722100E227119A4300C94F92 /* TestViewModel.swift in Sources */,
+				72673C1D2710E20900058EE4 /* UserSettings.swift in Sources */,
+				72673BFE2710BFB400058EE4 /* SceneDelegate.swift in Sources */,
+				722100DC27117F4C00C94F92 /* Task.swift in Sources */,
+				72673C1F2710E4D200058EE4 /* TasksViewController.swift in Sources */,
+				722100DE27118A2D00C94F92 /* TasksViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72673C012710BFB400058EE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72673C022710BFB400058EE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72673C062710BFB700058EE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72673C072710BFB700058EE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72673C0A2710BFB700058EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72673C0B2710BFB700058EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72673C0D2710BFB700058EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19E96B9F8EF250D0263A6D7 /* Pods-VTB_PrisonHack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3J967YL2W;
+				INFOPLIST_FILE = VTB_PrisonHack/SystemFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zazdergod.VTB-PrisonHack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72673C0E2710BFB700058EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAF7B7A660E9BE9FBC5743D /* Pods-VTB_PrisonHack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3J967YL2W;
+				INFOPLIST_FILE = VTB_PrisonHack/SystemFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zazdergod.VTB-PrisonHack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72673BF32710BFB400058EE4 /* Build configuration list for PBXProject "VTB_PrisonHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72673C0A2710BFB700058EE4 /* Debug */,
+				72673C0B2710BFB700058EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72673C0C2710BFB700058EE4 /* Build configuration list for PBXNativeTarget "VTB_PrisonHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72673C0D2710BFB700058EE4 /* Debug */,
+				72673C0E2710BFB700058EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72673BF02710BFB400058EE4 /* Project object */;
+}

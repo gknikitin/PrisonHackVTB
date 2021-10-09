@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarTop" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <RelativeLayout android:paddingTop="@dimen/margin_10dp" android:paddingBottom="@dimen/margin_15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/adsView" android:layout_below="@+id/toolbarTop" android:paddingStart="@dimen/margin_15dp" android:paddingEnd="@dimen/margin_15dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@+id/btn_speaker">
+            <ImageView android:id="@+id/first_life" android:padding="@dimen/margin_3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/second_life" android:padding="@dimen/margin_3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/third_life" android:padding="@dimen/margin_3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/fourth_life" android:padding="@dimen/margin_3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/fifth_life" android:padding="@dimen/margin_3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="@string/app_name"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/btn_speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="17sp" android:id="@+id/question_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4dp" android:layout_marginBottom="@dimen/margin_4dp" android:layout_below="@+id/btn_speaker" android:lineSpacingMultiplier="1.1"/>
+        <android.support.p003v7.widget.RecyclerView android:id="@+id/rvQuiz" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_next" android:layout_below="@+id/question_text"/>
+        <Button android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8dp" android:text="@string/next_question" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <include layout="@layout/view_common_loader"/>
+    </RelativeLayout>
+    <include android:id="@+id/adsView" layout="@layout/content_banner_ad"/>
+</RelativeLayout>

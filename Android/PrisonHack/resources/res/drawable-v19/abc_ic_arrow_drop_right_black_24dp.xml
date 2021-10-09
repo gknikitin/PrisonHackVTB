@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tint="?attr/colorControlNormal" android:height="24dp" android:width="24dp" android:autoMirrored="true">
+    <group android:name="arrow" android:pivotX="12" android:pivotY="12" android:rotation="90">
+        <path/>
+        <path/>
+    </group>
+</vector>

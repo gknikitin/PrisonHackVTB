@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/adsView" android:layout_below="@+id/toolbar_container">
+        <RelativeLayout android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lyt_graph" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="@+id/view_0" android:background="@color/dark_blue" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_below="@+id/piechart"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/score_container" android:padding="@dimen/margin_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1" android:layout_below="@+id/view_0">
+                    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.33">
+                        <TextView android:id="@+id/score_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" android:layout_centerHorizontal="true"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/txt_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/score_prompt" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.33">
+                        <TextView android:gravity="center" android:id="@+id/wrong_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wrong" android:layout_centerHorizontal="true"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/txt_wrong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/wrong_prompt" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.33">
+                        <TextView android:id="@+id/skip_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skipped" android:layout_centerHorizontal="true"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/txt_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/skip_prompt" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:id="@+id/view_1" android:background="@color/dark_blue" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_below="@+id/score_container"/>
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/piechart" android:layout_width="@dimen/margin_250dp" android:layout_height="@dimen/margin_250dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="15sp" android:textStyle="bold" android:gravity="center" android:id="@+id/greeting_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15dp" android:layout_marginTop="@dimen/margin_15dp" android:layout_marginRight="@dimen/margin_15dp" android:layout_below="@+id/lyt_graph"/>
+            <TextView android:textSize="15sp" android:gravity="center" android:id="@+id/share_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:text="@string/share_prompt" android:layout_below="@+id/greeting_text"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/prompt_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_15dp" android:weightSum="1" android:layout_below="@+id/share_text" style="?android:attr/buttonBarStyle">
+                <Button android:textColor="@color/white" android:id="@+id/btn_share" android:background="@drawable/rectangle_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_now" android:layout_weight="0.5" android:layout_marginEnd="@dimen/margin_6dp" style="?android:attr/buttonBarButtonStyle"/>
+                <Button android:textColor="@color/white" android:id="@+id/btn_play_again" android:background="@drawable/rectangle_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_again" android:layout_weight="0.5" android:layout_marginStart="@dimen/margin_6dp" style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+            <android.support.p003v7.widget.RecyclerView android:id="@+id/rvContent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_15dp" android:layout_below="@+id/prompt_container" android:nestedScrollingEnabled="false"/>
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@+id/adsView" layout="@layout/content_banner_ad"/>
+</RelativeLayout>
